@@ -42,7 +42,7 @@
       "tsc --noEmit",
       "eslint --fix",
       "prettier --write",
-      "npm run test "
+      "npm run test"
     ]
   }
 }

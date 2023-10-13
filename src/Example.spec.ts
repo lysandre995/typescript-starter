@@ -8,7 +8,7 @@ describe("Example", () => {
         example = new Example();
     });
 
-    describe("addSquares", () => {
+    describe('addSquares', () => {
         test("normal execution", () => {
             (example as any).square = jest.fn(n => {
                 if (n === 3) {
