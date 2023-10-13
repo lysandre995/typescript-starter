@@ -9,7 +9,7 @@
     "watch": "tsc -w",
     "lint": "eslint . & prettier . --check",
     "lint-fix": "eslint . --fix & prettier . --write",
-    "test": "jest",
+    "test": "jest --clearMocks --resetMocks --runInBand --coverage --detectOpenHandles --verbose",
     "prepare": "husky install"
   },
   "author": "Alessandro Alfano",
