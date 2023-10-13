@@ -3,11 +3,26 @@
         "browser": true,
         "es2021": true
     },
-    "extends": "standard-with-typescript",
+    "extends": ["standard-with-typescript", "prettier"],
     "parserOptions": {
         "ecmaVersion": "latest",
         "sourceType": "module"
     },
     "rules": {
+        "no-await-in-loop": "warn",
+        "no-duplicate-imports": "error",
+        "no-irregular-whitespace": "warn",
+        "no-self-assign": "warn",
+        "no-setter-return": "error",
+        "no-unreachable": "warn",
+        "no-unreachable-loop": "warn",
+        "no-use-before-define": "error",
+        "camelcase": "warn",
+        "block-scoped-var": "warn",
+        "curly": "warn",
+        "default-case": "warn",
+        "eqeqeq": ["warn", "always"],
+        "eol-last": "warn",
+        "quotes": ["warn", "double"]
     }
 }

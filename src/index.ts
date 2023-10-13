@@ -2,4 +2,6 @@ import { Example } from "./Example";
 
 const example = new Example();
 
-example.printHello();
+const result = example.addSquares(3, 4);
+
+console.log(result);

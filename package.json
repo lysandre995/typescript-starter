@@ -6,7 +6,9 @@
   "scripts": {
     "start": "node dist/index.js",
     "build": "tsc",
-    "lint": "eslint",
+    "watch": "tsc -w",
+    "lint": "eslint . & prettier . --check",
+    "lint-fix": "eslint . --fix & prettier . --write",
     "test": "jest"
   },
   "author": "Alessandro Alfano",
@@ -23,8 +25,24 @@
     "eslint-plugin-import": "^2.28.1",
     "eslint-plugin-n": "^16.2.0",
     "eslint-plugin-promise": "^6.1.1",
+    "husky": "^8.0.3",
     "jest": "^29.7.0",
+    "lint-staged": "^14.0.1",
     "prettier": "3.0.3",
     "typescript": "^5.2.2"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.{ts,tsx}": [
+      "tsc --noEmit",
+      "eslint --fix",
+      "prettier --write",
+      "npm run test",
+      "jest"
+    ]
   }
 }
