@@ -3,7 +3,7 @@
 This is a TypeScript project template with useful pre-made packages and configurations. It includes ESLint and Prettier for code formatting, Jest for testing (I use Babel as a JavaScript transpiler for Jest), and Husky, along with lint-staged, to ensure a pre-commit process that performs type checking, enforces proper formatting, and runs the tests.
 
 ## Usage
-Clone the repo and replace the example parts with your code, remove the .git folder and redo the git initialization.
+Clone the repo and replace the example parts with your code, remove the .git folder and redo the git initialization. Rename the folder like your project name and replace the "name" and "author" in the `package.json`.
 
 Compile the project:
 ```bash
